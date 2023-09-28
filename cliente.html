@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <header>
+        <h1>Carrinho de compras</h1>
+      </header>
+      
+      <main>
+        <!-- Conteúdo principal aqui -->
+      </main>
+      
+      <footer>
+      </footer>
+    </body>
+    </html>
+    <main>
+      <form method="post" action="processar_compra.php">
+        <h2>Informações de envio</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required>
+        
+        <label for="endereco">Endereço:</label>
+        <input type="text" name="endereco" required>
+        
+        <label for="cidade">Cidade:</label>
+        <input type="text" name="cidade" required>
+        
+        <label for="estado">Estado:</label>
+        <select name="estado" required>
+          <option value="">Selecione o estado</option>
+          <option value="SP">São Paulo</option>
+          <option value="RJ">Rio de Janeiro</option>
+          <option value="MG">Minas Gerais</option>
+        </select>
+        
+        <h2>Informações de pagamento</h2>
+        <label for="cartao">Número do cartão de crédito:</label>
+        <input type="text" name="cartao" required>
+        
+        <label for="vencimento">Data de vencimento:</label>
+        <input type="text" name="vencimento" required>
+        
+        <label for="cvv">CVV:</label>
+        <input type="text" name="cvv" required>
+        
+        <form method="post" action="processar_compra.php">
+          <!-- Campos de informação de envio e pagamento aqui -->
+          <input type="hidden" name="total" value="<?php echo $total; ?>">
+          <button type="submit">Finalizar compra</button>
+        </form>
+      
+        </form>
+        
+      </form>
+    </main>
+    <script>
+      
+    </script>
+</body>
+</html>
