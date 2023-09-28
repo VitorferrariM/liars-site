@@ -1,0 +1,132 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin:0%; 
+    padding: 0%; 
+    font-size: 100%; 
+    border:none; 
+    outline:none; 
+    font-weight: 300; 
+    box-sizing: border-box; 
+}
+
+/* ------------ PÁGINA FILIAL --------- */ 
+
+body {
+    background-color: rgb(176, 223, 231);
+}
+
+form {
+    background-color: white;
+    padding: 50px;
+    border: solid 2px #666;
+    border-radius: 50px;
+    width: 500px;
+    clear: both;
+    margin: 0 auto;
+}
+
+fieldset {
+    width: 250px;
+    clear: both;
+    margin: 0 auto;
+}
+
+fieldset input, select {
+    margin: 15px 0 15px 0;
+    border: solid 1px rgb(76, 75, 80);
+    padding: 8px;
+    border-radius: 25px;
+    margin-left: -25%;
+    width: 150%;
+    clear: both;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+fieldset label {
+    color: #666;
+    font-weight: bold;
+    margin-left: -25%;
+}
+
+.topform {
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+.topform h1 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.topform h2 {
+    font-size: 20px;
+}
+
+.button-submit {
+    margin-left: 7%;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 50px;
+    display: block;
+    width: 350px;
+    font-weight: bold;
+    background-color: rgb(71, 71, 77);
+}
+
+.button-submit:hover {
+    transition: 1s;
+    cursor: pointer;
+    background-color: rgb(253, 255, 255);
+}
+
+/*==========RODAPÉ==========*/
+.rodape{
+    margin-top: 100px;
+    background-color:#333; 
+    border-top: solid; 
+    border-bottom:solid;
+    border-color: black; 
+    text-align: center;
+  }
+  .icones-sociais {
+      margin-top: 40px;
+      margin-left: 60px;
+
+  }
+  .icones-sociais a{
+      font-size: 35px; 
+      color:rgb(255, 255, 255);
+      margin-right: 50px
+  }
+  .icones-sociais a:hover{
+      color: rgb(255,255,255);
+  }
+
+  intro {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 0 15px 20px 20px;
+    color: white;
+    background-color:rgb(255, 255, 255);
+    border-radius: 40px; 
+      }
+
+
+  .quebra{clear: both;}
+.button-insta, .button-zap {
+  display: inline-block; 
+  margin-right:6.5%; 
+  margin-left:6.5%;
+  text-align: center;
+}
+.btn-insta, .btn-zap {
+  margin-top: 15px;
+  width:150px;
+  cursor: pointer;
+  background-color: transparent;
+  text-align: center;
+  }

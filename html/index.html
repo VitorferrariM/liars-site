@@ -1,0 +1,183 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Empresa especializada em Tecnologia e criação de aplicativos Mobile.">
+        <meta name="keywords" content="Empresa de Tecnologia, Aplicativos Mobile">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="EzVagas">
+        
+        <title>LIARS</title>
+        <link rel="icon" type="image/png" sizes="192x192" href="IMG/logo.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="manifest" href="img/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="https://kit.fontawesome.com/d6ab6318a6.js" crossorigin="anonymous">
+        
+        <style>
+            /* Estilos gerais */
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+    
+            .content {
+                padding: 20px;
+            }
+    
+            /* Cabeçalho */
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: rgb(0, 0, 0);
+                margin-bottom: 30px;
+            }
+    
+            li {
+                float: left;
+            }
+    
+            li a {
+                display: block;
+                color: rgb(0, 0, 0);
+                text-align: center;
+                padding: 20px 6px;
+                text-decoration: none;
+                font-size: 14px;
+                letter-spacing: -1.10px;
+            }
+    
+            .active {
+                color: #ffffff;
+            }
+    
+            /* Submenu */
+            .submenu {
+                display: none;
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;
+                padding: 10px;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 200px;
+            }
+    
+            .submenu h2 {
+                margin-top: 0;
+            }
+    
+            /* Rodapé */
+            .footer {
+                background-color: rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
+                text-align: center;
+                padding: 20px 0;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+    
+            .footer-content {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+    
+            .footer-links ul {
+                list-style: none;
+                padding: 0;
+            }
+    
+            .footer-links li {
+                margin-bottom: 10px;
+            }
+    
+            .footer-links a {
+                color: #dc3c4d;
+                text-decoration: none;
+            }
+    
+            .copy {
+                margin-top: 20px;
+            }
+    
+            /* Estilos para a imagem da camisa */
+            .borda-vermelha {
+                border: 5px solid red;
+                padding: 10px;
+                display: inline-block;
+                vertical-align: top;
+            }
+    
+            .camisa {
+                width: 100px;
+                height: auto;
+            }
+        </style>
+        
+        <script>
+            function toggleSubMenu(submenuId) {
+                var submenu = document.getElementById(submenuId + '-submenu');
+                submenu.classList.toggle('active');
+            }
+        </script>
+    </head>
+    
+    <body>
+        <ul class="nav-opcoes">
+            <li><a href="" onclick="toggleSubMenu('roupas')">Roupas <span class="submenu-indicador">▼</span></a>
+                <div id="roupas-submenu" class="submenu">
+                    <div class="submenu-content">
+                        <h2>Informações do Roupas</h2>
+                        <!-- Conteúdo adicional do submenu -->
+                    </div>
+                </div>
+            </li>
+            <li><a href="#" onclick="toggleSubMenu('contato')">Contato <span class="submenu-indicador">▼</span></a>
+                <div id="contato-submenu" class="submenu">
+                    <div class="submenu-content">
+                        <h2>Fale Conosco</h2>
+                        <!-- Conteúdo adicional do submenu -->
+                    </div>
+                </div>
+            </li>
+            <li><a href="index.html"><img class="liars" src="img/liars.png" alt="liars"></a></li>
+            <li><a href="index.html"><img class="lupa" src="img/lupa.png" alt="Lupa"></a></li>
+          
+        </ul>
+    
+        <div class="content">
+            <!-- Conteúdo do site aqui -->
+        </div>
+    
+        <div class="borda-vermelha">
+            <img src="img/camisa.png" class="camisa" alt="Minha Imagem">
+        </div>
+    
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <!-- Links do rodapé aqui -->
+                </div>
+                <p class="copy">&copy; 2023 łiαrs.ρøłiŧicα dє Frєŧє.Iηførмαçøєs dє Cøηŧαŧø</p>
+            </div>
+        </footer>
+    </body>
+    </html>
+    

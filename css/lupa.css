@@ -1,0 +1,19 @@
+input{
+  width: 200px;
+  height: 30px;
+}
+
+ul{
+  padding: 0px;
+}
+
+li{
+  padding: 5px;
+  margin: 0px;
+  background: #d3d3d3;
+  width: 200px;
+  border: 1px solid white;
+}
+
+
+

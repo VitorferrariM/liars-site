@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro</title>
+
+  <link rel="stylesheet" href="css/login.css">
+
+  <div class="container">
+    <h2>Cadastro</h2>
+      <form id="cadastroForm" onsubmit="return validarFormulario();">
+      <label for="name">Nome:</label>
+      <input type="text" id="name" placeholder="Digite seu nome" required>
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" placeholder="Digite seu email" required>
+
+      <label for="email">CPF:</label>
+      <input type="CPF" id="CPF" placeholder="Digite seu CPF" required>
+      
+      <label for="password">Senha:</label>
+      <input type="password" id="password" placeholder="Digite sua senha" required>
+
+      <button type="submit" id="register-button">Cadastre-se</button>
+
+      <script>
+        function validarFormulario() {
+            var usuario = document.getElementById("usuario").value;
+            var senha = document.getElementById("senha").value;
+            
+            if (usuario === "" || senha === "") {
+                alert("Os campos de usuário e senha são obrigatórios.");
+                return false;
+            }
+              // Simulando um login bem-sucedido para fins de exemplo
+            // Em um cenário real, você se conectaria a um servidor para validar as credenciais
+            var usuarioValido = "usuario"; // Nome de usuário válido
+            var senhaValida = "senha123"; // Senha válida
+            
+            if (usuario === usuarioValido && senha === senhaValida) {
+                alert("Login bem-sucedido!");
+                window.location.href = "index.html"; // Redirecionar para a página principal
+            } else {
+                alert("Usuário ou senha incorretos.");
+            }
+            
+            return false;
+        }
+    </script>
+</head>
